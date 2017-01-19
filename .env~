@@ -1,9 +1,8 @@
 NODE_ENV='development'
-PORT=8080
+PORT=3000
 
 # An endpoint to upload files to s3, or 'https://s3.amazonaws.com' for amazon.
-AMAZON_S3_ENDPOINT='mongo-fair-test.s3-website-us-east-1.amazonaws.com'
-# https://console.aws.amazon.com/iam/home?#/security_credential
+AMAZON_S3_ENDPOINT='http://localhost:4569'
 AMAZON_SECRET_KEY='secret'
 AMAZON_ACCESS_KEY='notsecret'
 AMAZON_REGION='us-east-1'
@@ -12,11 +11,11 @@ MONGO_ENDPOINT='mongodb://localhost:27017'
 
 # The username and password employers will use to log into the employer site.
 EMPLOYER_USERNAME='admin'
-EMPLOYER_PASSWORD='password'
+EMPLOYER_PASSWORD='hunter3'
 
 # The base URL where this website is hosted. If it's hosted on
 # drop.xfair.io, the base would be "http://drop.xfair.io"
-URL_BASE="http://localhost:8080"
+URL_BASE="http://localhost:3000"
 
 # Either 'yes' or 'no' to send emails or not
 SMTP_ENABLE='no'

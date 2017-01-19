@@ -1,13 +1,15 @@
 body {
-  background: linear-gradient(to bottom, #547A82 0%, #3EACA8 33%, #A2D4AB 100%);
+  /*background: linear-gradient(to bottom, #547A82 0%, #3EACA8 33%, #A2D4AB 100%);*/
+  /*background: #a31f34;*/
+  background: #333;
   background-attachment: fixed;
   color: white;
   font-weight: 300;
-  padding-bottom: 2em;
+  /*padding-bottom: 2em;*/
 }
 
 h1 {
-  margin-top: 5%;
+  /*margin-top: 5%;*/
   letter-spacing: .15em;
 }
 
@@ -15,7 +17,7 @@ label {
   font-weight: 300;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 300;
   text-align: center;
 }
@@ -37,13 +39,13 @@ h1, h2, h3 {
 }
 
 .btn.btn-info {
-  background-color: #547A82;
-  border-color: #547A82;
+  background-color: #a31f34;
+  border-color: #a31f34;
   outline: none;
 }
 
 .btn.btn-info:active {
-  background-color: #3EACA8;
-  border-color: #3EACA8;
+  background-color: #8a8b8c;
+  border-color: #545759;
   outline: none;
 }

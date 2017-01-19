@@ -6,19 +6,28 @@ module.exports = {
   },
   records: function(req, res) {
     Record.find({ filled_out: true }, function (err, records) {
-      result = [];
+      hash = {};
       for (var i = 0; i < records.length; i += 1) {
-        result.push({
-          name: records[i].name,
-          resume: records[i].s3_url,
-          email: records[i].email,
-          major: records[i].major_name,
-          year: records[i].year_name,
-          degree: records[i].degree_name
-        });
+        id = records[i].mit_id;
+        if (!hash[id] || hash[id].createdAt < records[i].createdAt) {
+          hash[id] = {
+            createdAt: records[i].createdAt,
+            name: records[i].name,
+            resume: records[i].s3_url,
+            email: records[i].email,
+            major: records[i].major_name,
+            year: records[i].year_name,
+            degree: records[i].degree_name
+          };
+        }
       }
       if (err)
         throw err;
+
+      var result = [];
+      Object.keys(hash).forEach( function(key) {
+        result.push(hash[key]);
+      })
       res.json(result);
     });
   }

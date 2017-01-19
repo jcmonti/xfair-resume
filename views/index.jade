@@ -12,11 +12,16 @@ block extra-headers
 block content
   div.row
     div.col-sm-8.col-sm-offset-2
-      a(href="http://xfair.io")
-        img(class="logo" src="/static/img/logo.svg"
-               onerror="this.onerror=null; this.src='/static/img/logo.png'")
+      img(class="logo" src="/static/img/logo.png")
       - if (redrop)
         h2 Drop your updated resume below
       - else
-        h2 RESUME DROP
+        h1 RESUME DROP
       form(action="update", class="dropzone", id="resume-dropzone")
+  .header
+      a(href="http://mitsloan.mit.edu/master-of-business-analytics/")
+      img(class="logo-org" src="/static/img/mban.png")
+      a(href="http://mitsloan.mit.edu/master-of-business-analytics/")
+      img(class="logo-org" src="/static/img/orc.jpg")
+  .footer
+      p Powered by xxxxxx
