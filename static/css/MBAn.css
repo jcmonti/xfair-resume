@@ -3,7 +3,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #a31f34 70%, #1F1F1F 100%);
+  background: linear-gradient(to bottom, #a31f34 50%, #1F1F1F 100%);
   /*background: #a31f34;*/
   background-attachment: fixed;
   color: white;
@@ -13,7 +13,7 @@ body {
 
 .logo {
   height: 200px;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-bottom: 5%;
 }
 

@@ -8,6 +8,10 @@ module.exports = {
     res.render('index');
   },
 
+  team: function (req, res) {
+    res.render('MBAn');
+  },
+
   create: function (req, res) {
     Record.create({
       uuid: uuid.v4(),

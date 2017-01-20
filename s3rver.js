@@ -1,7 +1,7 @@
 var S3rver = require('s3rver');
 var client = new S3rver({
   port: 4569,
-  hostname: 'localhost',
+  hostname: '127.0.0.1',
   silent: false,
   directory: './s3rver/'
 });
