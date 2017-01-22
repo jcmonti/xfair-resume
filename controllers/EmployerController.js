@@ -9,7 +9,11 @@ module.exports = {
       hash = {};
       for (var i = 0; i < records.length; i += 1) {
         id = records[i].mit_id;
-        if (!hash[id] || hash[id].createdAt < records[i].createdAt) {
+        email = records[i].email;
+        createdAt = records[i].createdAt;
+        if (hash[id] === undefined
+         || hash[id].email !== email
+         || hash[id].createdAt < createdAt) {
           hash[id] = {
             createdAt: records[i].createdAt,
             name: records[i].name,
@@ -17,7 +21,8 @@ module.exports = {
             email: records[i].email,
             major: records[i].major_name,
             year: records[i].year_name,
-            degree: records[i].degree_name
+            degree: records[i].degree_name,
+            citizenship: records[i].citizenship_name
           };
         }
       }

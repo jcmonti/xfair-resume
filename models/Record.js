@@ -9,6 +9,7 @@ var schema = new mongoose.Schema({
   year: Number,
   major: [Number],
   degree: Number,
+  citizenship: Number,
   mit_id: String,
   filled_out: {type: Boolean, default: false}
 }, { timestamps: true });
@@ -35,6 +36,10 @@ schema.virtual('major_name').get(function() {
 
 schema.virtual('degree_name').get(function() {
   return form.degreeChoices[this.degree];
+});
+
+schema.virtual('citizenship_name').get(function() {
+  return form.citizenChoices[this.citizenship];
 });
 
 schema.virtual('url').get(function() {

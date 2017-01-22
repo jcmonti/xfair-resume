@@ -53,6 +53,7 @@ module.exports = {
         record.year = form.data.year;
         record.major = form.data.major;
         record.degree = form.data.degree;
+        record.citizenship = form.data.citizenship;
         record.mit_id = form.data.mit_id;
         var first_time = !record.filled_out;
         record.filled_out = true;

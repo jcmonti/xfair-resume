@@ -26,6 +26,9 @@ $(document).ready(function() {
         data: "degree"
       },
       {
+        data: "citizenship"
+      },
+      {
         data: "email",
         render: function(data, type, row, meta) {
           return '<a href="mailto:' + data + '">' + data + '</a>';

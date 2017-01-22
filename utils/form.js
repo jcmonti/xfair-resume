@@ -5,6 +5,7 @@ var widgets = forms.widgets;
 
 var gradYearChoices = ['- Select a graduation year', '2017', '2018', '2019', '2020', 'Graduate'];
 var degreeChoices = ['- Select a degree type', 'Bachelors', 'Masters', 'Doctorate'];
+var citizenChoices = ['- Citizenship', 'US Citizen', 'Permanent Resident', 'International'];
 var majorChoices = [
   "Course 1 - Civil and Environmental Engineering",
   "Course 2 - Mechanical Engineering",
@@ -92,6 +93,17 @@ var form = forms.create({
     errorAfterField: true,
     cssClasses: { field: [ 'form-group' ] }
   }),
+  citizenship: fields.number({
+    required: true,
+    label: 'Citizenship',
+    widget: widgets.select({ classes: ['form-control'] }),
+    choices: citizenChoices,
+    validators: [
+      validators.min(1, "You must select a citizenship type.")
+    ],
+    errorAfterField: true,
+    cssClasses: { field: [ 'form-group' ] }
+  }),
   mit_id: fields.string({
     required: true,
     label: 'MIT ID Number',
@@ -111,5 +123,6 @@ var form = forms.create({
 form.majorChoices = majorChoices;
 form.gradYearChoices = gradYearChoices;
 form.degreeChoices = degreeChoices;
+form.citizenChoices = citizenChoices;
 
 module.exports = form;
