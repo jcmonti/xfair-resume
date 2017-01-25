@@ -11,8 +11,9 @@ block extra-headers
 
 block content
   div.row
-    div.col-sm-8.col-sm-offset-2
+    div.col-sm-8.col-sm-offset-2.main
       img(class="logo" src="/static/img/logo.png")
+      h4 #MITAnalytics
       - if (redrop)
         h2 Drop your updated resume below
       - else
@@ -20,7 +21,7 @@ block content
       form(action="update", class="dropzone", id="resume-dropzone")
     div.row.footer
       div.col-sm-4.col-sm-offset-4.intro
-        a(href="/MBAn") Meet our organizing team 😁
+        a(href="/MBAn") Meet our organizing team
       div.col-sm-2.col-sm-offset-2
         a(href="http://mitsloan.mit.edu/master-of-business-analytics/")
           img(class="logo-org" src="/static/img/orc.jpg")

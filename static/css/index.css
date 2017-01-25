@@ -3,18 +3,30 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #a31f34 70%, #1F1F1F 100%);
-  /*background: #a31f34;*/
+  /*background: linear-gradient(to bottom, #a31f34 70%, #1F1F1F 100%);*/
+  background-image: url("/static/img/bg.jpg");
+  background-size: cover;
   background-attachment: fixed;
   color: white;
   text-align: center;
   min-height: 100%;
 }
 
+.main {
+  background-color: rgba(33, 33, 33, 0.9);
+  border-style: solid;
+  border-width: thin;
+  border-color: #000;
+
+  /*border-radius: 10px;*/
+  padding-bottom: 2%;
+  margin-top: 7%;
+}
+
 .logo {
-  height: 200px;
-  margin-top: 10%;
-  margin-bottom: 5%;
+  height: 150px;
+  margin-top: 5%;
+  /*margin-bottom: 5%;*/
 }
 
 .header {

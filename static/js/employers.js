@@ -41,10 +41,11 @@ $(document).ready(function() {
   window.d = datatable;
 
   var createCSV = function(rows) {
-    var result = ['email,name'];
+    var result = ['email,name,degree,major,year,citizenship'];
     for (var i = 0; i < rows.length; i += 1) {
+      console.log(row);
       var row = rows[i];
-      var line = row['email'] + "," + row['name'];
+      var line = row['email'] + "," + row['name'] + "," + row['degree'] + "," + row['major'] + "," + row['year'] + "," + row['citizenship'] ;
       result.push(line);
     }
     var joined = result.join('\n');
