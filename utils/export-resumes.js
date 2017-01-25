@@ -24,10 +24,20 @@ Record.find({ filled_out: true }).exec(function(err, records) {
     if (hash[id] === undefined
      || hash[id].email !== email
      || hash[id].createdAt < createdAt) {
-      var record = records[i];
-      console.log([record.major_name[0], record.s3_url, recordToFilename(record)].join(','));
+       var record = records[i];
+       hash[id] = {
+         email: records.email,
+         createdAt: records.createdAt,
+         record: record
+       };
     }
   }
+
+  var result = [];
+  Object.keys(hash).forEach( function(key) {
+    var record = hash[key].record;
+    console.log([record.major_name[0], record.s3_url, recordToFilename(record)].join(','));
+  })
 
   process.exit();
 });
