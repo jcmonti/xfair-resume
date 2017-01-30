@@ -11,10 +11,11 @@ html
     script(src='/static/bootstrap/dist/js/bootstrap.min.js')
 
     link(rel='stylesheet', href='/static/css/base.css')
+
     script(src='/static/js/base.js')
 
     block extra-headers
   body
     block top-banner
-    div.container
+    div.container-fluid
       block content

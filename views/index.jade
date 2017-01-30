@@ -14,14 +14,24 @@ block content
     div.col-sm-8.col-sm-offset-2.main
       img(class="logo" src="/static/img/logo.png")
       h4 #MITANALYTICS
-      - if (redrop)
-        h2 Drop your updated resume below
-      - else
-        h1 RESUME DROP
-      form(action="update", class="dropzone", id="resume-dropzone")
+
+      div.col-sm-8.col-sm-offset-2
+        a(href="https://www.eventbrite.com/e/2017-mit-careers-in-analytics-networking-evening-corporate-partners-tickets-30102338906")
+          h3.reg-btn Corporate Registration
+        a(href="https://www.eventbrite.com/e/2017-mit-careers-in-business-analytics-networking-evening-tickets-30710700532")
+          h3.reg-btn Student Registration
+      div.col-sm-4.col-sm-offset-4.btn.btn-default.btn-sm#drop-btn
+        h4 Resume Drop
+
+      div.col-sm-12#drop-resume-box
+        - if (redrop)
+          h2 Drop your updated resume below
+        - else
+          h1 RESUME DROP
+        form(action="update", class="dropzone", id="resume-dropzone")
     div.row.footer
       div.col-sm-4.col-sm-offset-4.intro
-        a(href="/MBAn") Meet our organizing team
+        a(href="/MBAn" style="color: #333;") Meet our organizing team
       div.col-sm-2.col-sm-offset-2
         a(href="https://orc.mit.edu/")
           img(class="logo-org" src="/static/img/orc.jpg")

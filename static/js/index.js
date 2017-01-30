@@ -1,4 +1,18 @@
+// $("#hide").click(function(){
+//     $("p").hide();
+// });
+// $("#drop-resume-box").hide();
+
+
 $(document).ready(function() {
+  $("#drop-resume-box").hide();
+
+  $("#drop-btn").click(function(){
+    $(".reg-btn").hide();
+    $("#drop-btn").hide();
+    $("#drop-resume-box").show();
+  });
+
   Dropzone.options.resumeDropzone = {
     paramName: "resume",
     maxFilesize: 8,

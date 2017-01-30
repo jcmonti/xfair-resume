@@ -12,6 +12,21 @@ body {
   min-height: 100%;
 }
 
+a {
+  color: #fff;
+}
+
+#drop-btn {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+
+.section {
+  height: 100%;
+}
+
 .main {
   background-color: rgba(33, 33, 33, 0.9);
   border-style: solid;
