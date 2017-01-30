@@ -16,6 +16,13 @@ a {
   color: #fff;
 }
 
+.reg-btn {
+ margin-top: 30px;
+ /*margin-bottom: 10px;*/
+ background-color: rgba(255, 255, 255, 0.2);
+ color: #fff;
+}
+
 #drop-btn {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -32,15 +39,14 @@ a {
   border-style: solid;
   border-width: thin;
   border-color: #000;
-
   /*border-radius: 10px;*/
   padding-bottom: 2%;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .logo {
   height: 150px;
-  margin-top: 5%;
+  /*margin-top: 1%;*/
   /*margin-bottom: 5%;*/
 }
 
