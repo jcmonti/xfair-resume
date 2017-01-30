@@ -9,6 +9,7 @@ $(document).ready(function() {
 
   $("#drop-btn").click(function(){
     $(".reg-btn").hide();
+    $(".details").hide();
     $("#drop-btn").hide();
     $("#drop-resume-box").show();
   });

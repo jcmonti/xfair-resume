@@ -16,8 +16,13 @@ a {
   color: #fff;
 }
 
+.details {
+  /*background-color: #fff;*/
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .reg-btn {
- margin-top: 30px;
+ margin-top: 1%;
  /*margin-bottom: 10px;*/
  background-color: rgba(255, 255, 255, 0.2);
  color: #fff;
@@ -30,8 +35,8 @@ a {
   color: #fff;
 }
 
-.section {
-  height: 100%;
+.dropzone {
+  margin-top: 2%;
 }
 
 .main {
@@ -41,7 +46,7 @@ a {
   border-color: #000;
   /*border-radius: 10px;*/
   padding-bottom: 2%;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .logo {
