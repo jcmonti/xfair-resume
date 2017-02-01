@@ -35,7 +35,7 @@ $(document).ready(function() {
         }
       }
     ],
-    pageLength: 25
+    pageLength: 50
   });
 
   window.d = datatable;
