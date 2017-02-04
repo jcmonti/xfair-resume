@@ -29,12 +29,16 @@ block content
       div.col-sm-4.col-sm-offset-4.btn.btn-default.btn-sm#drop-btn
         h4 Resume Drop
 
+      div.col-sm-4.col-sm-offset-4(style="margin-top: 1%;")
+        a(href="/jobs" style="color: #fff;") Job Postings
+
       div.col-sm-12#drop-resume-box
         - if (redrop)
           h2 Drop your updated resume below
         - else
           h1 RESUME DROP
         form(action="update", class="dropzone", id="resume-dropzone")
+
     div.row.footer
       div.col-sm-4.col-sm-offset-4.intro
         a(href="/MBAn" style="color: #333;") Meet our organizing team

@@ -12,6 +12,10 @@ module.exports = {
     res.render('MBAn');
   },
 
+  jobs: function (req, res) {
+    res.render('jobs');
+  },
+
   create: function (req, res) {
     Record.create({
       uuid: uuid.v4(),

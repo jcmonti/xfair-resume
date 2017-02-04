@@ -1,0 +1,60 @@
+.dz-preview {
+  display: none;
+}
+
+body {
+  /*background: linear-gradient(to bottom, #FAE9E4 50%, #1F1F1F 100%);*/
+  background: #333;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  min-height: 100%;
+}
+
+.main {
+  text-align: left;
+}
+
+.header {
+  margin-bottom: 10px;
+  height: 90px;
+  width: 100%;
+  background-color: #fff;
+  color: #545759;
+}
+
+.logo-org {
+  margin: 0;
+  height: 90px;
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.logo {
+  margin: 0;
+  height: 50px;
+}
+
+h2 {
+  letter-spacing: .15em;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-weight: 300;
+}
+
+form {
+  margin-top: 3em;
+  color: white;
+  border: 2px dashed gray;
+  cursor: pointer;
+  height: 10em;
+  text-align: center;
+  padding: 4em;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
