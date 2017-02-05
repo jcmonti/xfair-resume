@@ -2,6 +2,12 @@
   display: none;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+}
+
 body {
   /*background: linear-gradient(to bottom, #a31f34 70%, #1F1F1F 100%);*/
   background-image: url("/static/img/bg.jpg");
@@ -10,6 +16,7 @@ body {
   color: white;
   text-align: center;
   min-height: 100%;
+  margin-bottom: 50px;
 }
 
 a {
@@ -79,9 +86,10 @@ a {
 }
 
 .footer {
-  position: absolute;;;
+  overflow-x: scroll;
+  position: absolute;
   bottom: 0;
-  left: 0;
+  /*left: 0;*/
   margin: 0;
   height: 50px;
   width: 100%;
