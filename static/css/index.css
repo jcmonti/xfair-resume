@@ -46,6 +46,9 @@ a {
   margin-top: 2%;
 }
 
+.fb-root {
+  padding: 0;
+}
 .main {
   background-color: rgba(33, 33, 33, 0.9);
   border-style: solid;
@@ -53,6 +56,7 @@ a {
   border-color: #000;
   /*border-radius: 10px;*/
   padding-bottom: 2%;
+  padding-right: 4%;
   /*margin-top: 1%;*/
 }
 
