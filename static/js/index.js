@@ -13,7 +13,7 @@ $(document).ready(function() {
     $("#drop-btn").hide();
     $("#drop-resume-box").show();
   });
-
+  
   Dropzone.options.resumeDropzone = {
     paramName: "resume",
     maxFilesize: 8,

@@ -30,7 +30,7 @@ a {
 
 .reg-btn {
  margin-top: 1%;
- /*margin-bottom: 10px;*/
+ margin-bottom: 10px;
  background-color: rgba(255, 255, 255, 0.2);
  color: #fff;
 }
@@ -52,8 +52,8 @@ a {
   border-width: thin;
   border-color: #000;
   /*border-radius: 10px;*/
-  padding-bottom: 1%;
-  margin-top: 3%;
+  padding-bottom: 2%;
+  /*margin-top: 1%;*/
 }
 
 .logo {

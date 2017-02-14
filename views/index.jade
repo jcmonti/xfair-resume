@@ -12,32 +12,32 @@ block extra-headers
 block content
   div.row
     div.col-sm-8.col-sm-offset-2.main
-      h1(style="margin-top: 5%; margin-bottom: 2%;") 2017 MIT Careers in Business Analytics Networking Evening
+      a(href="https://www.facebook.com/pg/MITAnalytics/photos/?tab=album&album_id=1160852587360752")
+        h1(style="margin-top: 3%; margin-bottom: 2%;") 2017 MIT Careers in Business Analytics Networking Evening
 
-      img(class="logo" src="/static/img/logo.png")
-      h4 #MITANALYTICS
+      div.row
+        div.col-sm-6.fb-root
+          | <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmedia%2Fset%2F%3Fset%3Da.1160852587360752.1073741828.1132460323533312%26type%3D3&width=400&show_text=true&appId=485593794954421&height=492" width="400" height="492" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        div.col-sm-6(style="padding-top: 5%;")
 
-      div.details
-        p February 7, 2017 5:00 PM – 8:00 PM
-        p MIT Media Lab, 75 Amherst Street, Cambridge, MA 02139
+          img(class="logo" src="/static/img/logo.png")
+          h4 #MITANALYTICS
 
-      div.col-sm-12
-        a(href="https://www.eventbrite.com/e/2017-mit-careers-in-analytics-networking-evening-corporate-partners-tickets-30102338906")
-          div.col-sm-4.col-sm-offset-1.btn.btn-default.reg-btn Corporate Registration
-        a(href="https://www.eventbrite.com/e/2017-mit-careers-in-business-analytics-networking-evening-tickets-30710700532")
-          div.col-sm-4.col-sm-offset-2.btn.btn-default.reg-btn Student Registration
-      div.col-sm-4.col-sm-offset-4.btn.btn-default.btn-sm#drop-btn
-        h4 Resume Drop
+          div.details
+            h3 February 7, 2017
+            h3 5:00 PM – 8:00 PM
+            h3 MIT Media Lab
 
-      div.col-sm-4.col-sm-offset-4(style="margin-top: 1%;")
-        a(href="/jobs" style="color: #fff;") Job Postings
+          div.col-sm-6.col-sm-offset-3(style="margin-top: 8%;")
+            p Resume Drop is closed
+            a(href="/jobs" style="color: #fff; font-size: 20px;") Job Postings
 
-      div.col-sm-12#drop-resume-box
-        - if (redrop)
-          h2 Drop your updated resume below
-        - else
-          h1 RESUME DROP
-        form(action="update", class="dropzone", id="resume-dropzone")
+          div.col-sm-12#drop-resume-box
+            - if (redrop)
+              h2 Drop your updated resume below
+            - else
+              h1 RESUME DROP
+            form(action="update", class="dropzone", id="resume-dropzone")
 
     div.row.footer
       div.col-sm-4.col-sm-offset-4.intro
