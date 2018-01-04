@@ -23,14 +23,11 @@ block content
 
       a(href="https://www.analyticsfair.mit.edu")
           div.col-sm-4.col-sm-offset-4.btn.btn-default.reg-btn Go to Event Details
-      div.col-sm-8.col-sm-offset-2
-        h4 See you in 2018!
 
-      div.col-sm-8.col-sm-offset-2(style="margin-top: 4%;")
-        p Resume Drop is closed
-        a(href="/jobs" style="color: #fff; font-size: 20px;") Job Postings
+      #div.col-sm-8.col-sm-offset-2(style="margin-top: 4%;")
+      #  a(href="/jobs" style="color: #fff; font-size: 20px;") Job Postings
 
-      div.col-sm-12 drop-resume-box
+      div.col-sm-12 # drop-resume-box
         - if (redrop)
           h2 Drop your updated resume below
         - else
