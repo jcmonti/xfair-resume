@@ -67,7 +67,7 @@ module.exports = {
           if (first_time)
             sendEmail({
               email: record.email,
-              subject: '[xFair] Thanks for dropping your resume!',
+              subject: 'Thanks for dropping your resume!',
               template: 'email/thanks',
               locals: {
                 record: record
