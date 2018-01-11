@@ -51,7 +51,8 @@ var majorChoices = [
   "Course ESD - Engineering Systems",
   "Course HST - Health Sciences and Technology",
   "Course MAS - Media Arts and Sciences",
-  "Course STS - Science, Technology, and Society"
+  "Course STS - Science, Technology, and Society",
+  "MIT Staff"
 ];
 
 var form = forms.create({
