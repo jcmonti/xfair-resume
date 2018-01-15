@@ -24,7 +24,7 @@ app.get('/employers', auth, employerController.search);
 app.get('/employers/records.json', auth, employerController.records);
 app.get('/', dropController.index);
 //app.get('/MBAn', dropController.team);
-//app.get('/jobs', dropController.jobs);
+app.get('/jobs', dropController.jobs);
 app.post('/update', upload.single('resume'), dropController.create);
 app.get('/:token', dropController.findRecord, dropController.view);
 app.post('/:token', dropController.findRecord, dropController.update);
