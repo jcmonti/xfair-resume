@@ -10,8 +10,10 @@ block extra-headers
   link(rel='stylesheet', href='/static/sweetalert/dist/sweetalert.css')
 
 block content
-  div.row
-      div.col-sm-12 
+  div.row 
+      h1 Resume Drop is closed
+
+      div.col-sm-12#drop-resume-box
         - if (redrop)
           h2 Drop your updated resume below
         - else
@@ -19,7 +21,7 @@ block content
         form(action="update", class="dropzone", id="resume-dropzone")
 
      div.details
-        h4 February 7, 2018 5:30 PM – 8:30 PM - MIT Media Lab
+        h5 Our event occurred on February 7, 2018 5:30 PM – 8:30 PM - MIT Media Lab
         a(href="https://www.analyticsfair.mit.edu")
           div.col-sm-4.col-sm-offset-4.btn.btn-default.reg-btn Go to Event Details
         
