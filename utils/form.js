@@ -3,7 +3,7 @@ var fields = forms.fields;
 var validators = forms.validators;
 var widgets = forms.widgets;
 
-var gradYearChoices = ['- Select a graduation year', '2018', '2019', '2020', '2021', 'Graduate'];
+var gradYearChoices = ['- Select a graduation year', '2019', '2020', '2021', '2022', 'Graduate'];
 var degreeChoices = ['- Select a degree type', 'Bachelors', 'Masters', 'Doctorate'];
 var citizenChoices = ['- Citizenship', 'US Citizen', 'Permanent Resident', 'International'];
 var majorChoices = [
