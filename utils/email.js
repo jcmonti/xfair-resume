@@ -1,6 +1,7 @@
 var jade = require('jade');
 var email = require('emailjs');
 if (process.env.SMTP_ENABLE == 'yes') {
+  console.log('Hey, SMTP is enabled')
   var server = email.server.connect({
     user: process.env.SMTP_USERNAME,
     password: process.env.SMTP_PASSWORD,
