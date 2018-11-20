@@ -30,6 +30,6 @@ Record.find({ filled_out: true }).exec(function(err, records) {
   }
 
   // console.log(JSON.stringify(result));
-
+  console.log('Hey, SMTP is enabled') ;
   process.exit();
 });
