@@ -4,7 +4,6 @@ var uuid = require('node-uuid');
 var AWS = require('aws-sdk');
 
 module.exports = multer({
-  alert("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH") ;
   storage: s3({
     dirname: 'resumes',
     bucket: process.env.AMAZON_BUCKET,
