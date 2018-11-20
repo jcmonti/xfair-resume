@@ -135,4 +135,3 @@ form.citizenChoices = citizenChoices;
 
 module.exports = form;
 
-console.log("TESSSSSSSSSSSSSSSSSST");
