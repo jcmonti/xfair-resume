@@ -27,7 +27,8 @@ if (process.env.SMTP_ENABLE == 'yes') {
         ]
       };
       server.send(message, function(err, message) {
-        if (err)
+        console.log("here");
+	if (err)
           throw err;
       });
     });

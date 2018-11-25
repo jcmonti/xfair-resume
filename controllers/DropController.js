@@ -65,7 +65,6 @@ module.exports = {
           if (err)
             throw err;
           if (true)
-	    console.log("test");
             sendEmail({
               email: record.email,
               subject: 'Thanks for dropping your resume!',
