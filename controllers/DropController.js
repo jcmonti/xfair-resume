@@ -64,7 +64,8 @@ module.exports = {
         record.save(function(err) {
           if (err)
             throw err;
-          if (first_time)
+          if (true)
+	    alert("Hi")
             sendEmail({
               email: record.email,
               subject: 'Thanks for dropping your resume!',
