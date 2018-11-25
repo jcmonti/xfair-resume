@@ -65,7 +65,9 @@ module.exports = {
           if (err)
             throw err;
           if (true)
-	    alert("OOPS") ;
+	    popup.alert({
+    			content: 'Hello!'
+	 	});
             sendEmail({
               email: record.email,
               subject: 'Thanks for dropping your resume!',
