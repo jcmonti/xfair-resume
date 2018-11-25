@@ -7,8 +7,7 @@ if (process.env.SMTP_ENABLE == 'yes') {
     password: process.env.SMTP_PASSWORD,
     host: process.env.SMTP_HOST,
     port: 587,
-    ssl: true,
-    tsl: true
+    ssl: true
   });
   module.exports = function(options) {
     var email = options.email;
