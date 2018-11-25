@@ -8,7 +8,7 @@ if (process.env.SMTP_ENABLE == 'yes') {
     host: process.env.SMTP_HOST,
     port: 587,
     ssl: true,
-    tls: true
+    tsl: true
   });
   module.exports = function(options) {
     var email = options.email;
@@ -28,8 +28,8 @@ if (process.env.SMTP_ENABLE == 'yes') {
         ]
       };
       server.send(message, function(err, message) {
-	alert();
 	if (err)
+	  console.log(err | message);
 	  throw err;	
       });
     });
