@@ -17,6 +17,7 @@ var majorChoices = [
   "Course 6-2 - Electrical Engineering and Computer Science",
   "Course 6-3 - Computer Science",
   "Course 6-7 - Computer Science and Molecular Biology",
+  "Course 6-14 - Computer Science, Economics and Data Science",
   "Course 7 - Biology",
   "Course 8 - Physics",
   "Course 9 - Brain and Cognitive Sciences",
