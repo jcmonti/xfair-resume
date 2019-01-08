@@ -53,6 +53,7 @@ var majorChoices = [
   "Course HST - Health Sciences and Technology",
   "Course MAS - Media Arts and Sciences",
   "Course STS - Science, Technology, and Society",
+  "Course SCM - Supply Chain Management",
   "MIT Staff"
 ];
 
